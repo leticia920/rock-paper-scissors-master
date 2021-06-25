@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:600,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="head-div">
+        <div class="header">
+          <div class="title">
+            <img src="./images/logo.svg">
+          </div>
+          <div class="score">
+            <p>SCORE</p>
+            <h1 id="score">0</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="options">
+        <img src="./images/bg-triangle.svg" alt="triangle" class="triangle"/>
+        <button id="paper" class="paper icon"><img src="./images/icon-paper.svg" alt="paper"/></button>
+        <button id="scissors" class="scissors icon"><img src="./images/icon-scissors.svg" alt="scissors"/></button>
+        <button id="rock" class="rock icon"><img src="./images/icon-rock.svg" alt="rock"/></button>
+      </div>
+
+      <div class="result hidden">
+        <div class="user">
+          <button class="container-icon player"><img src=""/></button>
+        </div>
+        <div class="play-again">
+          <h1 id="result"></h1>
+          <button>PLAY AGAIN</button>
+        </div>
+        <div class="computer">
+          <button class="container-icon player"><img src=""/></button>
+        </div>
+      </div>
+    </div>
+    <script rel="text/javascript" src="script.js"></script>
+  </body>
+</html>

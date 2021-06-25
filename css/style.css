@@ -1,0 +1,160 @@
+:root {
+  --font-family: "Barlow Semi Condensed";
+  --red: hsl(349, 71%, 52%);
+  --blue: hsl(230, 89%, 62%);
+  --yellow: hsl(39, 89%, 49%);
+  --gray: hsl(217, 16%, 45%);
+  --white: #cecece;
+  --dark-blue: hsl(229, 25%, 31%);
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--white);
+  height: 800px;
+
+  background: linear-gradient(to bottom, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  background-repeat: no-repeat;
+}
+
+.head-div {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex; /*direction por defecto row*/
+  justify-content:space-between;
+  flex: 1 0 50%;
+
+  max-width: 900px;
+
+  border: 3px solid var(--gray);
+  border-radius: 20px;
+  padding: 0 30px 0 30px; /*top, right, bottom, left*/
+}
+
+.title {
+  margin: 25px 0 0 0; /*top, right, bottom, left*/
+}
+
+.title img{
+  height: 70%;
+}
+
+.score {
+  text-align: center;
+  background-color: var(--white);
+
+  margin: 10px 0 10px 0; /*top, right, bottom, left*/
+
+  width: 120px;
+  border-radius: 10px;
+}
+
+.score p {
+  color: var(--blue);
+  margin : 10px 0 5px 0;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+.score h1 {
+  color: var(--dark-blue);
+  font-size: 40px;
+  margin: 0;
+}
+
+.options {
+  position: relative;
+  
+  margin-top: 4rem;
+}
+
+.triangle {
+  position: absolute;
+  top: 60px;
+  left: 40%;
+}
+
+.icon {
+  height: 150px;
+  width: 150px;
+
+  border-radius: 50%;
+  border: 15px solid;
+
+  position: absolute;
+}
+
+.paper {
+  left: 35%;
+  color: var(--blue);
+}
+
+.scissors {
+  right: 40%;
+  color: var(--yellow);
+}
+
+.rock {
+  top: 250px;
+  left: 44%;
+  color: var(--red);
+}
+
+.result {
+  margin-top: 200px;
+
+  display: flex; /*direction por defecto row*/
+  justify-content: space-evenly;
+  flex: 1 0 33%;
+}
+
+.container-icon {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+
+  border: 15px solid;
+}
+
+.play-again button{
+  width: 130px;
+  height: 50px;
+
+  border-radius: 10px;
+
+  background-color: var(--white);
+
+  font-family: var(--font-family);
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    max-width:260px;
+  }
+
+  .triangle {
+    left: 20%;
+  }
+
+  .paper {
+    left: 5%;
+  }
+  
+  .scissors {
+    right: 0;
+  }
+  
+  .rock {
+    left: 38%;
+    top: 260px;
+  }
+}
